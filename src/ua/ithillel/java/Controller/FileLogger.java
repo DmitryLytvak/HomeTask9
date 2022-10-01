@@ -36,7 +36,7 @@ public class FileLogger {
 	}
 	
 	private void toFile(String message) {
-		try (FileWriter writer = new FileWriter("log.txt", true)) {
+		try (FileWriter writer = new FileWriter("src/resources/log.txt", true)) {
 			String fileBody = "[" + LocalDateTime.now() + "]: ["
 					+ fileLoggerConfiguration.getLevel() + "]: Message - " + message;
 		} catch (IOException e) {
