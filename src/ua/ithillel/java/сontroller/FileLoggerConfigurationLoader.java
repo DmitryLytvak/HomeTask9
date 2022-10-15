@@ -1,4 +1,4 @@
-package ua.ithillel.java.Controller;
+package ua.ithillel.java.сontroller;
 
 import java.io.FileReader;
 import java.io.IOException;

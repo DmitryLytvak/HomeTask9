@@ -1,4 +1,4 @@
-package ua.ithillel.java.Controller;
+package ua.ithillel.java.сontroller;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -35,7 +35,7 @@ public class FileLogger {
 	}
 	
 	private void toFile(String message) {
-		try (FileWriter writer = new FileWriter("src/resources/log.txt", true)) {
+		try (FileWriter writer = new FileWriter("src/ua/ithillel/java/log.txt", true)) {
 			String fileBody = "[" + LocalDateTime.now() + "]: ["
 					+ fileLoggerConfiguration.getLevel() + "]: Message - " + message;
 			writer.write(fileBody);
